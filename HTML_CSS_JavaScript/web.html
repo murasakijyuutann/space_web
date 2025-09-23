@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Practice Playground</title>
+    <style>
+        /* Simple internal CSS */
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .highlight { background-color: yellow; }
+        table, th, td { border: 1px solid #333; border-collapse: collapse; padding: 6px; }
+        nav a { margin-right: 10px; }
+    </style>
+</head>
+<body>
+
+    <!-- Headings -->
+    <h1>Main Heading (h1)</h1>
+    <h2>Subheading (h2)</h2>
+    <h3>Section Title (h3)</h3>
+
+    <!-- Paragraphs & Text formatting -->
+    <p>This is a simple paragraph with <strong>bold</strong>, <em>italic</em>, and
+       <span class="highlight">highlighted text</span>.</p>
+
+    <!-- Lists -->
+    <h3>Shopping List (unordered)</h3>
+    <ul>
+        <li>Apples</li>
+        <li>Bananas</li>
+        <li>Carrots</li>
+        <li>Dates</li>
+        <li>Eggplants</li>
+    </ul>
+
+    <h3>Steps to Make Tea (ordered)</h3>
+    <ol>
+        <li>Boil water</li>
+        <li>Add tea leaves</li>
+        <li>Steep and serve</li>
+    </ol>
+
+    <!-- Links & Images -->
+    <p>
+        <a href="https://www.google.com" target="_blank">Visit Google</a>
+    </p>
+    <img src="https://media1.tenor.com/m/UcpzfXzOr0MAAAAC/miku-miku-beam-hatsune-miku.gif" alt="Hatsune Miku" width="800" height="450">
+
+    <!-- Table -->
+    <h3>Sample Table</h3>
+    <table>
+        <tr>
+            <th>Name</th><th>Age</th><th>City</th>
+        </tr>
+        <tr>
+            <td>Alice</td><td>25</td><td>Tokyo</td>
+        </tr>
+        <tr>
+            <td>Bob</td><td>30</td><td>London</td>
+        </tr>
+    </table>
+
+    <!-- Form -->
+    <h3>Contact Form</h3>
+    <form onsubmit="return handleForm(event)">
+        <label>Name: <input type="text" name="name" required></label><br><br>
+        <label>Email: <input type="email" name="email" required></label><br><br>
+        <label>Message:<br>
+            <textarea name="message" rows="4" cols="40"></textarea>
+        </label><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Audio & Video -->
+    <h3>Media</h3>
+    <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <br><br>
+    <video width="320" height="180" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Map area example -->
+    <h3>Clickable Image Map</h3>
+    <img src="https://via.placeholder.com/400x200" alt="Demo Map" usemap="#demoMap">
+    <map name="demoMap">
+        <area shape="rect" coords="10,10,190,90"
+              href="https://www.google.com"
+              alt="Google"
+              target="_blank">
+    </map>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#top">Go to Top</a>
+        <a href="#table">Go to Table</a>
+    </nav>
+
+    <!-- Button with JavaScript -->
+    <button onclick="alert('Button clicked!')">Click Me</button>
+
+    <script>
+        // Simple JavaScript function
+        function handleForm(event) {
+            event.preventDefault();
+            alert('Form submitted! (This is a demo)');
+            return false;
+        }
+    </script>
+</body>
+</html>

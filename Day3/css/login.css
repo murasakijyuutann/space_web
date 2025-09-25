@@ -1,0 +1,33 @@
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    form {
+        width: 400px;
+        height: 170px;
+        border: #4CAF50 2px solid;
+        margin-bottom: 20px;
+    }
+    input[type="text"], input[type="password"] {
+        padding: 8px;
+        width: 200px;
+        margin-right: 10px;
+    }
+    button {
+        padding: 5px 12px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        margin-top: 15px;
+        margin-left: 120px;
+        cursor: pointer;
+        
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+    li {
+        list-style: none;
+        margin-bottom: 10px;
+    }

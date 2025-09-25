@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ボカロDB検索</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            padding: 8px;
+            width: 200px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 8px 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- 検索フォーム -->
+    <!-- actionは検索処理を行うJSPファイルを指定 -->
+    <!-- 転送 : getはURLにパラメータを付加する、POSTはリクエストボディにデータを含める -->
+    <!-- input要素はユーザーからの入力を受け取るためのもの -->
+    <!-- input - textは1行のテキスト入力を受け付ける -->
+    <form action="search.jsp" method="get">
+        <input type="text" name="keyword" placeholder="文字を入力してください" value="" required>
+        <button type="submit">検索</button>
+    </form>
+    
+</body>
+
+</html>

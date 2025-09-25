@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ボカロDB検索</title>
+</head>
+<body>
+    <!-- 検索フォーム -->
+    <!-- actionは検索処理を行うJSPファイルを指定 -->
+    <!-- 転送 : getはURLにパラメータを付加する、POSTはリクエストボディにデータを含める -->
+    <form action="search.jsp" method="get">
+        <input type="text" name="keyword" placeholder="キーワード" required>
+        <button type="submit">検索</button>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>virtual UI element practise using or with -: ( )</title>
+    <style>
+        form {
+            
+           width: 500px;
+           background-color: aquamarine;
+        }
+
+        input:disabled {
+            background-color: lightgray;
+            border: 2px solid gray;
+        }
+        input:checked + span {
+            font-weight: bold;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Virtual UI Element       </legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </fieldset>
+        <fieldset>
+            <legend>Choose your favorite subject:</legend>
+            <label>
+                  <input type="radio" name="subject" value="math" id="math"><span>Math</span>
+            </label>
+            <label>
+                  <!--disabled will prevent click-->
+                  <input type="radio" name="subject" value="history" id="history" disabled><span>History</span>
+            </label>
+            <label>
+                  <input type="radio" name="subject" value="art" id="art"><span>Art</span>
+            </label>
+            <label>
+                  <input type="radio" name="subject" value="science" id="science"><span>Science</span>
+            </label>
+        </fieldset>
+    </form>
+</body>
+</html>

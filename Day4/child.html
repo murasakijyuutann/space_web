@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS child element practise</title>
+    <style>
+        section {
+            background-color: #f4f4f4;
+        }
+
+        section ul{
+            border: 2px solid #1beb14;
+        }
+
+        section > ul {
+            border: 2px solid #ce2424;
+        }
+
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <h1>CSS child element practise</h1>
+        </header>
+        <p>This is a practice page for CSS child elements.</p>
+        <ul>
+            <li> <p>This is a child element inside one nested list.</p>
+                <ul>
+                    <li>
+                        <p>This is a child element inside two nested lists.</p>
+                    </li>
+                    <li>
+                        <p>This is another child element inside two nested lists.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li> <p>This is a child element inside three nested lists.</p></li>
+                    <li> <p>This is another child element inside three nested lists.</p></li>
+                    <li> <p>This is yet another child element inside three nested lists.</p></li>
+                    <li> <p>This is a fourth child element inside three nested lists.</p></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>

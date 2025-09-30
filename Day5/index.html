@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple JavaScript Functions</title>
+    <style>
+        span {
+            color: blue;
+            font-weight: bold;
+            font-size: 90px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1>JavaScript Functions Example</h1>
+    <h2>Hello JavaScript!</h2>
+    <div id="demo"></div>
+    <div class="result"></div>
+    <script>
+        function myFunction(a) {
+            return a * 10;
+        }
+        document.getElementById("demo").innerHTML = myFunction(4);
+        // use innerText to print text only
+        // use innerHTML to print text and HTML tags
+        let text = document.getElementById("hello");
+        demo.textContent = "Hello World!";
+        demo.innerText = "HELLOOOOOO JavaScript"
+        demo.style.color = "red";
+        demo.style.fontSize = "30px";
+        demo.style.fontFamily = "Georgia";
+        demo.style.backgroundColor = "lightgrey";
+        demo.style.padding = "10px";
+        demo.style.border = "2px solid black";
+        demo.style.width = "200px";
+        demo.style.textAlign = "center";
+        demo.style.margin = "20px auto";
+        demo.style.borderRadius = "10px";
+        demo.style.boxShadow = "2px 2px 5px grey";
+        demo.style.transition = "all 0.3s ease";
+        demo.onmouseover = function() {
+            this.style.backgroundColor = "lightblue";
+            this.style.color = "white";
+            this.style.transform = "scale(1.05)";
+        }
+
+        let result=document.querySelector(".result");
+        result.innerHTML="HELLO <span>JavaScript</span>";
+ </script>
+</body>
+
+
+</html>

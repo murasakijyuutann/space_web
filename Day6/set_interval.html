@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval Example</title>
+</head>
+<body>
+    <h2>Set Interval Example</h2>
+    <div id="demo"></div>
+
+    <script>
+        let count = 0;
+        const demo = document.getElementById("demo");
+
+        const intervalId = setInterval(() => {
+            count++;
+            demo.innerHTML = count + " seconds have elapsed.<br>";
+
+            if (count === 5) {
+                demo.innerHTML += count + " minutes have passed.";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

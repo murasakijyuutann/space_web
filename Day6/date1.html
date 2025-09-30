@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date objects in JavaScript</title>
+</head>
+<body>
+<h2>Date objects in JavaScript</h2>
+    <div id="demo"></div>
+    
+    <script>
+        const date = new Date();
+       demo.innerHTML += (date + "<br>");
+       demo.innerHTML += (date.toString() + "<br>");
+       demo.innerHTML += (date.toDateString() + "<br>");
+       demo.innerHTML += (date.toISOString() + "<br>");
+       demo.innerHTML += (date.toUTCString() + "<br>");
+       demo.innerHTML += (date.toLocaleString() + "<br>");
+       demo.innerHTML += (date.toLocaleDateString() + "<br>");
+       demo.innerHTML += (date.toLocaleTimeString() + "<br>");
+
+       // Getting individual components
+       demo.innerHTML += ("Year: " + date.getFullYear() + "<br>");
+       demo.innerHTML += ("Month: " + (date.getMonth() + 1) + "<br>"); // Months are zero-based
+       demo.innerHTML += ("Date: " + date.getDate() + "<br>");
+       demo.innerHTML += ("Day: " + date.getDay() + "<br>"); // 0 (Sunday) to 6 (Saturday)
+       demo.innerHTML += ("Hours: " + date.getHours() + "<br>");
+       demo.innerHTML += ("Minutes: " + date.getMinutes() + "<br>");
+       demo.innerHTML += ("Seconds: " + date.getSeconds() + "<br>");
+       demo.innerHTML += ("Milliseconds: " + date.getMilliseconds() + "<br>");
+
+        // Example: Displaying days of the week
+        let day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+        for (let i = 0; i < day.length; i++) {
+            demo.innerHTML += (day[i] + "<br>");
+        }
+        demo.innerHTML += `today is: ${day[date.getDay()]}`;
+
+    </script>
+    
+    
+</body>
+</html>
